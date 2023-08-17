@@ -10,7 +10,7 @@ const squareStyle = {
 
 function Square(props){
     return(
-        <button style={squareStyle} onClick={()=>props.handleMove(props.ind)}>{props.value}
+        <button style={squareStyle}  disabled={props.winner} onClick={()=>props.handleMove(props.ind)}>{props.value}
         </button>
     )
 }

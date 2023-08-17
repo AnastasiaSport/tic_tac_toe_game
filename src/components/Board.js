@@ -15,7 +15,7 @@ const Board = (props) => {
     return (
         <div style={style}>
             {props.board.map((el, ind) => <Square handleMove={props.handleMove}
-                                           value={el} ind={ind}/>)}
+                                           value={el} ind={ind} winner={props.winner}/>)}
 
 
         </div>
